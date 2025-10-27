@@ -204,3 +204,95 @@ header nav ul li {
     gap: 2rem;
     padding: 1rem;
 }
+:root {
+    /* Color Variables */
+    --primary-dark: #231813;    /* Dark Brown (Text/Headers) */
+    --secondary-dark: #61594F; /* Grayish Brown (Secondary Text) */
+    --medium-accent: #8F663E;  /* Warm Brown (Accents/Borders) */
+    --light-accent: #000000;   /* Light Tan (Secondary Backgrounds) */
+    --cream: #F3E4D1;          /* Cream (Primary Background) */
+}
+
+body {
+    background-color: var(--cream);
+    color: var(--primary-dark);
+}
+
+header {
+    background-color: var(--medium-accent);
+    border-bottom: 2px solid var(--primary-dark);
+}
+
+nav a {
+    color: var(--cream);
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--light-accent);
+}
+
+.profile-container,
+.publication,
+.org-card {
+    background-color: white;
+    border: 1px solid var(--light-accent);
+    box-shadow: 4px 4px 8px rgba(189, 166, 132, 0.1);
+}
+
+h1, h2, h3 {
+    color: var(--primary-dark);
+    border-bottom: 2px solid var(--medium-accent);
+}
+
+.school,
+.role {
+    color: var(--secondary-dark);
+}
+
+footer {
+    background-color: var(--medium-accent);
+    color: var(--cream);
+}
+
+footer p {
+    color: var(--cream);
+}
+
+a {
+    color: var(--medium-accent);
+    text-decoration-color: var(--light-accent);
+}
+
+a:hover {
+    color: var(--primary-dark);
+}
+
+/* Leadership Section Specific Styling */
+.leadership-grid {
+    background-color: rgba(243, 228, 209, 0.3);
+    border-radius: 8px;
+    padding: 1.5rem;
+}
+
+.org-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--medium-accent);
+}
+/* Add padding to publication articles */
+.publication {
+    padding: 1.5rem 2rem;
+    margin: 1.5rem 0;
+}
+
+/* Ensure text elements have consistent spacing */
+.publication p,
+.publication .achievements {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+/* Specific adjustment for Agora title */
+.publication .agora {
+    margin-left: 1.5rem;
+}
