@@ -180,3 +180,27 @@ header nav ul li {
     text-align: center;
     padding: 1.5rem;
 }
+/* Update logo styling for consistent rendering */
+.org-logo {
+    max-height: 80px;  /* Changed from fixed height */
+    max-width: 200px;  /* Added max-width constraint */
+    width: auto;
+    height: auto;
+    margin: 0 auto 1rem;
+    object-fit: contain;
+    display: block;  /* Ensure proper spacing */
+}
+
+/* Add responsive image container */
+.org-card {
+    position: relative;
+    padding: 2rem 1.5rem;
+}
+
+/* Ensure image container stability */
+.leadership-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 1rem;
+}
