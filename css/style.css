@@ -78,12 +78,6 @@ nav a:hover {
     margin-bottom: 0.5rem;
 }
 
-.agora {
-    font-family: 'Stratos', sans-serif;
-    color: #d40000;
-    font-size: 2.2rem;
-    letter-spacing: -0.2px;
-}
 
 .role {
     font-weight: 600;
@@ -166,19 +160,13 @@ header nav ul {
 header nav ul li {
     margin-left: 2rem;
 }
-/* Logo styling */
-.org-logo {
-    height: 60px;
-    width: auto;
-    margin-bottom: 1rem;
-    object-fit: contain;
-}
 
 .org-card {
     text-align: center;
     padding: 1.5rem;
 }
 /* Update logo styling for consistent rendering */
+/* Logo styling */
 .org-logo {
     max-height: 80px;  /* Changed from fixed height */
     max-width: 200px;  /* Added max-width constraint */
@@ -188,6 +176,26 @@ header nav ul li {
     object-fit: contain;
     display: block;  /* Ensure proper spacing */
 }
+
+.publication-logo {
+  max-height: 100px;
+  max-width: 250px;
+  width: auto;
+  height: auto;
+  margin: 0 auto 1rem;
+  object-fit: contain;
+  display: block;
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+
+/* hover over logo */
+.publication-logo:hover {
+  transform: translateY(-3px);
+  opacity: 0.85;
+}
+
 
 /* Add responsive image container */
 .org-card {
