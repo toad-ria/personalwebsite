@@ -67,7 +67,6 @@ nav a:hover {
 .portfolio-section {
     margin: 4rem 0;
     padding-top: 2rem;
-    border-top: 2px solid rgba(0, 0, 0, 0.29);
 }
 
 .publication {
@@ -120,7 +119,6 @@ nav a:hover {
 #contact {
     margin: 4rem 0;
     padding-top: 2rem;
-    border-top: 2px solid rgba(0, 0, 0, 0.29);
 }
 
 #contact a {
@@ -243,6 +241,7 @@ nav a:hover {
 h1, h2, h3 {
     color: var(--primary-dark);
     border-bottom: 2px solid var(--medium-accent);
+    padding-bottom: 0.5rem;
 }
 
 .school,
